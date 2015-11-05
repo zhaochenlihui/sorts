@@ -6,4 +6,5 @@ void createRand(Array ahead, int length);
 
 void exchange(int& a, int& b);
 
+unsigned char getdigits(int num,int digits);
 #endif

@@ -5,6 +5,7 @@
 #include "tools.h"
 #include "heapsort.h"
 #include "quicksort.h"
+#include "radixSort.h"
 int main(int argc, char *argv[])
 {
     int num;
@@ -28,13 +29,21 @@ int main(int argc, char *argv[])
     t_start = clock();
     quicksort(a, 1, a.length); 
     t_end = clock(); 
-    std::cout << "quicksort cost: " << t_end - t_start <<" ms"<< std::endl;
+    std::cout << "quicksort cost: " << t_end - t_start <<" cpu clock times"<< std::endl;
      
     createRand(a, a.length);
     t_start = clock();
     heapsort(a);
     t_end = clock(); 
-    std::cout << "heapsort cost: " << t_end - t_start <<" ms"<< std::endl;
+    std::cout << "heapsort cost: " << t_end - t_start <<" cpu clock times"<< std::endl;
+
+
+    createRand(a, a.length);
+    t_start = clock();
+    radixSort(a); 
+    t_end = clock(); 
+    std::cout << "radix sort cost: " << t_end - t_start <<" cpu clock times"<< std::endl;
+
      
 }
 

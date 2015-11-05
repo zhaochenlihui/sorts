@@ -1,6 +1,7 @@
 #include "quicksort.h"
 #include "tools.h"
 
+//partiton the array
 int partition(Array &a, int p, int r)
 {
     int x = a[r];
@@ -15,6 +16,7 @@ int partition(Array &a, int p, int r)
     exchange(a[i + 1], a[r]);
     return i + 1;
 }
+
 void quicksort(Array &a, int p, int r)
 {
     if(p < r){

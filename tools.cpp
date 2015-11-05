@@ -16,3 +16,9 @@ void exchange(int& a, int& b)
     a = b;
     b = c;
 }
+
+//method to get a particular byte of an int
+unsigned char getdigits(int num,int digits)
+{
+    return num >> (8 * (digits -1));
+}

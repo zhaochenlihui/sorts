@@ -2,7 +2,7 @@
 #define __ARRAY_H_ 
 
 
-//define array, index start form 1
+//define array, index starts form 1
 class Array
 {
 public:
@@ -12,6 +12,8 @@ public:
     {
         return head[index-1];
     } 
+
+    
 };
 
 
