@@ -2,8 +2,8 @@
 ###currently includes:
 - heapsort  
 - quicksort  
-- quicksort with random sampling  
-- radixsort 
+- quicksort with random partition
+- radix sort 
 ###how to run:
 
 - `make`  
