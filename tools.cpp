@@ -2,13 +2,19 @@
 
 
 
-void createRand(Array ahead, int length)
+void createRand(Array ahead, int length, bool worse)
 {
-    for(int i = 1; i <= length; i++)
-    {
-        ahead[i] = rand();
+    if(worse){
+        for(int i = 1; i <= length; i++){
+            ahead[i] = length - i;
+        }
+    }else{
+        for(int i = 1; i <= length; i++){
+             ahead[i] = rand();
+        }
     }
 }
+
 
 void exchange(int& a, int& b)
 {

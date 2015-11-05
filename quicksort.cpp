@@ -25,3 +25,19 @@ void quicksort(Array &a, int p, int r)
         quicksort(a, q + 1, r); 
     }
 }
+
+int partition_rand(Array &a, int p, int r)
+{
+    int i = rand()%(r-p) + p;
+    exchange(a[r], a[i]);
+    return partition(a, p, r);
+}
+
+void quicksort_rand(Array &a, int p, int r)
+{
+    if(p < r){
+        int q = partition_rand(a, p, r);
+        quicksort_rand(a, p, q - 1);
+        quicksort_rand(a, q + 1, r);
+    }
+}
