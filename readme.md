@@ -6,8 +6,8 @@
 - radixsort 
 ###how torun:
 
-`make`
-`.\sort [num]` `[w]`  
-  - `[num]` is the scale of dates created in random, default 10000.
-- `[w]`:use parameter `w` to creat worst array instead of random array, you'll see: quicksort GG but quicksort_random still run well.
+- `make`
+- `.\sort [num]` `[w]`  
+-- `[num]` is the scale of dates created in random, default 10000.
+-- `[w]`:use parameter `w` to creat worst array instead of random array, you'll see: quicksort GG but quicksort_random still run well.
 
