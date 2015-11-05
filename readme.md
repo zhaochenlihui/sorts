@@ -1,2 +1,2 @@
 #Readme
-####some basic sort algorithm implemented in C/C++.
+####some basic sort algorithms implemented in C/C++.
