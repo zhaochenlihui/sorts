@@ -28,8 +28,6 @@ void buildMaxHeap(Array &a)
     }
 }
 
-
-
 void heapsort(Array &a)
 {
     int len = a.length;
