@@ -1,37 +1,17 @@
-#include<stdio.h>
-#include<stdlib.h>
-#define _LEN_ 100
-
-void createRand(int* ahead)
-{
-    for(int i = 0; i < _LEN_; i++)
-    {
-        ahead[i] = rand();
-    }
-}
-
-
-
-
-
-
-
-
-
-
+#include<iostream>
+#include "array.h"
+#include "tools.h"
+#include "heapsort.h"
+#define NUM 100000
 int main()
 {
-    int a[_LEN_];
-    createRand(a);
-    for(int i = 0; i < _LEN_; i++)
-    {
-        printf("%d\n", a[i]);
-    }
-    printf("-------------\n");
-    createRand(a);
-    for(int i = 0; i < _LEN_; i++)
-    {
-        printf("%d\n", a[i]);
+    int arr[NUM] = {0};
+    Array a;
+    a.head = arr;
+    a.length = NUM;
+    createRand(a, a.length);
+    heapsort(a);
+    for (int i = 1; i <= NUM; ++i) {
+    std::cout << a[i]<< std::endl;
     }
 }
-
