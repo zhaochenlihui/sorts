@@ -32,6 +32,7 @@ void buildMaxHeap(Array &a)
 
 void heapsort(Array &a)
 {
+    int len = a.length;
     buildMaxHeap(a);
     for (int i = a.length; i >=2; i--)
     {
@@ -39,4 +40,5 @@ void heapsort(Array &a)
         a.length--;
         maxHeapify(a, 1); 
     }
+    a.length = len;
 }

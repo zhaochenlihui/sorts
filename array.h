@@ -8,7 +8,6 @@ class Array
 public:
     int length;
     int* head;
-
     inline int& operator[](int index)
     {
         return head[index-1];
