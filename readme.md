@@ -3,11 +3,12 @@
 - heapsort  
 - quicksort  
 - quicksort with random partition
-- radix sort 
+- radix sort  
+
 ###how to run:
 
 - `make`  
 - `.\sort [num]` `[w]`  
 -- `[num]` is the scale of dates created in random, default 10000.   
--- `[w]`:use parameter `w` to creat worst array instead of random array, you'll see: quicksort GG but quicksort_random still run well.
+-- `[w]`:use parameter `w` to create worst array instead of random array, you'll see that quicksort GG but quicksort_random still runs well.
 
